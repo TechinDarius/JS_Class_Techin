@@ -1,0 +1,63 @@
+* {
+  margin: 10px;
+}
+h1 {
+  text-align: center;
+  color: bisque;
+  font-size: 40px;
+  font-weight: 100;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted red;
+}
+.menuText {
+  text-align: center;
+  width: 130px;
+  font-weight: 100;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.orderBtn {
+  background-color: #d4ce2f;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.notWorking{
+display: none;
+}
+.yellowBlock {
+  width: 98%;
+  border: 5px solid #d4ce2f;
+}
+.pizzasList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.pizzaContainer {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 1px;
+  img {
+    height: 120px;
+    width: 120px;
+  }
+}
+.pizzaName{
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+.ingridients{
+  font-style: italic;
+}
+.soldout{
+  filter:grayscale(1);
+  color: grey;
+
+}

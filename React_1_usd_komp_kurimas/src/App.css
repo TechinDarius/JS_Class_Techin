@@ -1,0 +1,24 @@
+.box {
+  border: 2px solid aquamarine;
+}
+.heading {
+  background-color: aquamarine;
+  padding: 20px;
+}
+.cards {
+  background-color: azure;
+  border: 1px solid #9d8686;
+  margin: 10px;
+}
+.card{
+    background-color: #77c4c4;
+    border: 1px solid #7eb076;
+    margin: 10px;
+}
+.firstRow{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.secondRow{
+    
+}
