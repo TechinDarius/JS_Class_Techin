@@ -1,0 +1,144 @@
+{
+  "users": [
+    {
+      "userName": "John Doe",
+      "email": "john.doe@example.com",
+      "channel": "JDChannel",
+      "id": "856c",
+      "likes": 1
+    },
+    {
+      "userName": "Alice Smith",
+      "email": "alice.smith@example.com",
+      "channel": "ASChannel",
+      "id": "d21d",
+      "likes": 2
+    },
+    {
+      "id": "16ba",
+      "userName": "Jane Johnson",
+      "email": "jane.johnson@example.com",
+      "channel": "JJChannel",
+      "likes": -1
+    },
+    {
+      "id": "ea92",
+      "userName": "Robert Brown",
+      "email": "robert.brown@example.com",
+      "channel": "RBChannel",
+      "likes": 1
+    },
+    {
+      "id": "6595",
+      "userName": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "channel": "EDChannel",
+      "likes": 2
+    },
+    {
+      "id": "509a",
+      "userName": "Michael Wilson",
+      "email": "michael.wilson@example.com",
+      "channel": "MWChannel",
+      "likes": 1
+    },
+    {
+      "id": "7541",
+      "userName": "Jessica Taylor",
+      "email": "jessica.taylor@example.com",
+      "channel": "JTChannel",
+      "likes": 4
+    },
+    {
+      "id": "34a0",
+      "userName": "David Martinez",
+      "email": "david.martinez@example.com",
+      "channel": "DMChannel",
+      "likes": 1
+    },
+    {
+      "id": "aa85",
+      "userName": "Sarah Garcia",
+      "email": "sarah.garcia@example.com",
+      "channel": "SGChannel",
+      "likes": 0
+    },
+    {
+      "id": "54bd",
+      "userName": "Matthew Thomas",
+      "email": "matthew.thomas@example.com",
+      "channel": "MTChannel",
+      "likes": 3
+    },
+    {
+      "id": "79ef",
+      "userName": "Olivia Clark",
+      "email": "olivia.clark@example.com",
+      "channel": "OCChannel",
+      "likes": 2
+    },
+    {
+      "id": "c3e2",
+      "userName": "Daniel Rodriguez",
+      "email": "daniel.rodriguez@example.com",
+      "channel": "DRChannel",
+      "likes": 5
+    },
+    {
+      "id": "a1b2",
+      "userName": "Isabella Hernandez",
+      "email": "isabella.hernandez@example.com",
+      "channel": "IHChannel",
+      "likes": 1
+    },
+    {
+      "id": "d4f5",
+      "userName": "William Moore",
+      "email": "william.moore@example.com",
+      "channel": "WMChannel",
+      "likes": 0
+    },
+    {
+      "id": "e6f7",
+      "userName": "Sophia Walker",
+      "email": "sophia.walker@example.com",
+      "channel": "SWChannel",
+      "likes": 2
+    },
+    {
+      "id": "g8h9",
+      "userName": "James Lopez",
+      "email": "james.lopez@example.com",
+      "channel": "JLChannel",
+      "likes": 1
+    },
+    {
+      "id": "i0j1",
+      "userName": "Emma Perez",
+      "email": "emma.perez@example.com",
+      "channel": "EPChannel",
+      "likes": 1
+    },
+    {
+      "id": "k2l3",
+      "userName": "Alexander Hill",
+      "email": "alexander.hill@example.com",
+      "channel": "AHChannel",
+      "likes": 4
+    },
+    {
+      "id": "m4n5",
+      "userName": "Ava Scott",
+      "email": "ava.scott@example.com",
+      "channel": "AScChannel",
+      "likes": 3
+    },
+    {
+      "id": "o6p7",
+      "userName": "Michaela Green",
+      "email": "michaela.green@example.com",
+      "channel": "MGChannel",
+      "likes": 0
+    }
+  ]
+}

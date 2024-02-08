@@ -1,10 +1,11 @@
 import { DevTool } from "@hookform/devtools";
 import { Message } from "@mui/icons-material";
 import { useForm } from "react-hook-form";
-import {postData}  from "./../services/post.js";
-import { useState } from "react";
+import { postData } from "./../services/post.js";
+import { useEffect, useState } from "react";
+import { updateData } from "../services/update.js";
 
-function Form({ setUpdate }) {
+function Form({ setUpdate, user, setEdit }) {
   const [error, setError] = useState("");
 
   const {
@@ -13,24 +14,42 @@ function Form({ setUpdate }) {
     control,
     formState: { errors },
     reset,
+    setValue,
   } = useForm({
     defaultValues: {
-      userName: "Enter name",
-      email: "Enter@email.com",
-      channel: "Enter channel",
+      userName: "",
+      email: "",
+      channel: "",
+      // userName: "Enter name",
+      // email: "Enter@email.com",
+      // channel: "Enter channel",
     },
   });
 
   const formSubmitHandler = async (data) => {
     try {
-      postData({...data,likes:0});
+      if (user) {
+        await updateData(user.id, data);
+        setEdit(false);
+      } else {
+        await postData({ ...data, likes: 0 });
+      }
+
       setUpdate((update) => update + 1);
       reset();
     } catch (error) {
       setError(error.message);
     }
-    // return response.data;
   };
+
+  useEffect(() => {
+    if (user) {
+      setValue("userName", user.userName, { shouldValidate: true });
+      setValue("email", user.email, { shouldValidate: true });
+      setValue("channel", user.channel, { shouldValidate: true });
+    }
+  }, []);
+
   return (
     <>
       <form onSubmit={handleSubmit(formSubmitHandler)} noValidate>
@@ -160,7 +179,7 @@ function Form({ setUpdate }) {
 
         <input type="submit" value="Submit" />
       </form>
-      {error && <p>{error}</p>} 
+      {error && <p>{error}</p>}
       <DevTool control={control} />
     </>
   );
